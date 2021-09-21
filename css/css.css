@@ -738,7 +738,18 @@ section.em-dev div.container-fluid div.card div.card-body{
 section.em-dev div.container-fluid div.card div.card-body div.card-text{
   padding: 0 20px;
 }
-
+section.em-dev div.container-fluid div.card div.card-body div.card-text a{
+  color:black;
+  outline:none;
+  text-decoration: none;
+  border: none;
+}
+section.em-dev div.container-fluid div.card div.card-body div.card-text a:focus{
+  color:black;
+  outline:none;
+  text-decoration: none;
+  border: none;
+}
 
 
 
