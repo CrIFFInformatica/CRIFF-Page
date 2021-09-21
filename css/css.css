@@ -707,6 +707,10 @@ section.em-dev .dev-titulo{
   width: 100%;
   font-size: 50px;
   padding: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
 }
 section.em-dev .dev-titulo p{
   font-size: 14px;
