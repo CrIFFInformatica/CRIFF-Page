@@ -1,0 +1,73 @@
+                      /* Celular */
+@media(max-width: 450px){
+  section div.imagem{width: 80vw;
+    margin: auto;
+  }
+  section.about-us div.foto{
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+  }
+  section.projetos{
+    padding: 0 0 100px 0 !important;
+  }
+  section.projetos div.texto{
+    height: auto !important;
+    padding: 0 15px;
+    margin: 0 !important;
+  }
+  section.projetos div.fabianico{
+    margin:20px 20px 0 20px !important;
+    height: auto !important;
+  }
+  section.projetos div.fabianico div.iconbar{
+    background-color: rgba(0,0,0,.4);
+    padding: 8px;
+    box-sizing: initial;
+    color: white;
+  }
+  div.titulo{
+    margin: 50px 20px 20px 20px !important;
+    padding: 10px !important;
+    justify-content: center !important;
+    box-shadow: 2px 5px 10px rgba(0,0,0,.6), inset 2px 2px 10px rgba(211,211,211,.1);
+  } 
+  @keyframes gotinha{
+    0%{
+      top: -25px;
+      }
+      100%{
+        top:5000px;
+        transform: scale(0);
+      }
+    }
+    p{
+      margin: 0;
+    }
+
+      /*?????????????????????CONTATO?????????????????*/
+
+  #contato-mensagem{
+    padding: 20px 10px !important;
+  }
+  
+
+}
+
+
+                      /*Tablet / Laptop*/
+}
+@media(min-width: 451px) and (max-width: 1140px){
+  section div.texto {
+    margin: auto;
+  }
+  section div.imagem{
+    width: 80vw;
+    margin: auto;
+  }
+  section.about-us div.foto{
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+  }
+}
