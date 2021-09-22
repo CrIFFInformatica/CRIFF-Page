@@ -22,6 +22,56 @@ span.iff{
 }
 
 
+/*???????????????????????????????????????????????????????????????????????
+
+            ALL BUTTON    ALL BUTTON    ALL BUTTON   ALL BUTTON  
+
+?????????????????????????????????????????????????????????????????????????*/
+div.block1{
+  position: relative;
+  overflow: hidden;
+}
+button.button-f{
+  display: block;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+}
+span.button{
+  margin: 0;
+  padding: 0;
+  z-index: 99;
+}
+a.button-click:hover{ 
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+div.button-ef{
+  background-color: #111;
+  position: absolute;
+  height: 15%;
+  width: 40%;
+  bottom: 0;
+  border-top-left-radius:6px ;
+  border-top-right-radius:6px ;
+  transition: 1s;
+}
+button:hover .button-ef{
+  height: 90%;
+  width: 100%;
+  border-bottom-left-radius:6px ;
+  border-bottom-right-radius:6px ;
+}
+
 
 
 
@@ -53,6 +103,10 @@ section div.texto{
 }
 section div.texto h1{
   font-weight: 600;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
 }
 section div.texto p.desc{
   font-size: 17px;
@@ -94,7 +148,7 @@ section div.texto p.desc:last-child{
   100%{transform: rotate(360deg);}
 }
 .block:hover{
-    animation: roda 1s ease-in-out; 0.5;
+    animation: roda 1s ease-in-out;
 }
 .coletor{
   position: absolute;

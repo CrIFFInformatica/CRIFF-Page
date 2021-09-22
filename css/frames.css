@@ -20,3 +20,8 @@
   0%{top: -25px}
   100%{top:3000px;transform: scale(0);}
 }
+@keyframes cor{
+  0%{color: white}
+  50%{color: lightgreen;}
+  100%{color: white}
+}
