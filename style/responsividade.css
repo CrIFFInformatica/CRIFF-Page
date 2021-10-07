@@ -1,0 +1,11 @@
+@media(max-width: 1140px){
+  section.projetos div.fabianico{
+    margin:20px 20px 0 20px !important;
+    height: auto !important;
+  }
+  section.projetos div.fabianico div.iconbar{
+    background-color: rgba(0,0,0,.4);
+    padding: 8px;
+    box-sizing: initial;
+    color: white;
+  }

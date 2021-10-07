@@ -1,0 +1,223 @@
+.projetos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 50px 0;
+   flex-wrap: wrap;
+}
+.projeto-title{
+  padding: 40px 0 25px 0;
+}
+.projeto-card{
+  width: 510px;
+  height: 505px;
+  background-color:rgba(0,0,0,0.1);
+  box-shadow:0 1em 1em rgba(211,211,211,0.9);
+  position: relative;
+  border-radius:20px;
+  flex-wrap: wrap;
+  overflow:hidden;
+  margin: 0 10px 20px 10px;
+}
+.boxprojetoimg a{
+  margin: 0
+}
+.boxprojetoimg{
+  display: flex;
+  flex-direction:column-reverse;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.projetoimg#one{
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  transition: 1s;
+}
+.projetoimg#two{
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  transition: 1s;
+}
+.projetoimg{
+  width:420px;
+  height: 250px;
+}
+.projeto-card :is(.projetoimg#one, .projetoimg#two){
+  transition: 1s;
+}
+.projetoimg#one:hover{
+  height: 400px
+}
+.projetoimg#one:hover ~ .projetoimg#two{
+  height: 105px; 
+  transition: 1s;
+}
+.projetoimg#two:hover{
+  height: 400px;
+}
+.projetoimg img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+.descicon{
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.iconbar{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 3px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.iconbar.reverso{
+  right: 3px !important;
+  left: auto !important;
+}
+.boxprojetoimg.reverso{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.iconp{
+  width: 80px;
+  height: 80px;
+  margin: 10px 0px;
+  border-radius: 50%;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  position:relative;
+}
+.iconp img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.projeto-content{
+  margin: 20px;
+  max-width: 570px;
+  padding: 50px 30px;
+  color: white;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.content-text{
+  z-index: 2;
+}
+.content-text button{
+  background-color: #D90429;
+  border: none;
+  padding: 7px 16px;
+  color: white;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.content-text button:focus{
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+.projeto-content::before{
+  height: 250%;
+  content: '';
+  width: 30%;
+  background: #D90429;  /* fallback for old browsers */
+ position: absolute;
+  animation: rotc 20s linear infinite;
+}
+.projeto-content::after{
+  content: '';
+  background-color: #212529;
+  inset: 4px;
+  position: absolute;
+}
+@keyframes rotc{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+/*???????????????????????????????????????????????????????????????????????
+
+         EFEITOS-IMAGEMS-CARD     EFEITOS-IMAGEMS-CARD
+
+?????????????????????????????????????????????????????????????????????????*/
+section.projetos div.projeto-card div.iconbar div.iconp.carlossergio:before{content:'Carlos Sergio  ';font-family:"poppins";font-style:normal;font-weight:normal;width:150px;height:32px;position:absolute;right:-40px;display:flex;justify-content:center;align-items:center;border-top-right-radius:10px;border-bottom-right-radius:10px;color:white;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.carlossergio:after{content:"";width:22.5px;height:22.5px;background-color:red;position:absolute;transform:rotate(45deg);right:0;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.carlossergio:hover:after{opacity:1;visibility:visible;right:-31px;}
+section.projetos div.projeto-card div.iconbar div.iconp.carlossergio:hover:before{opacity:1;visibility:visible;right:-170px;}
+
+section.projetos div.projeto-card div.iconbar div.iconp.carlosdaniel:before{content:'Carlos Daniel  ';font-family:"poppins";font-style:normal;font-weight:normal;width:150px;height:32px;position:absolute;right:-40px;display:flex;justify-content:center;align-items:center;border-top-right-radius:10px;border-bottom-right-radius:10px;color:white;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.carlosdaniel:after{content:"";width:22.5px;height:22.5px;background-color:red;position:absolute;transform:rotate(45deg);right:0;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.carlosdaniel:hover:after{opacity:1;visibility:visible;right:-31px;}
+section.projetos div.projeto-card div.iconbar div.iconp.carlosdaniel:hover:before{opacity:1;visibility:visible;right:-170px;}
+
+section.projetos div.projeto-card div.iconbar div.iconp.rafaelli:before{content:'Rafael Li Wu  ';font-family:"poppins";font-style:normal;font-weight:normal;width:150px;height:32px;position:absolute;right:-40px;display:flex;justify-content:center;align-items:center;border-top-right-radius:10px;border-bottom-right-radius:10px;color:white;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.rafaelli:after{content:"";width:22.5px;height:22.5px;background-color:red;position:absolute;transform:rotate(45deg);right:0;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.rafaelli:hover:after{opacity:1;visibility:visible;right:-31px;}
+section.projetos div.projeto-card div.iconbar div.iconp.rafaelli:hover:before{opacity:1;visibility:visible;right:-170px;}
+
+section.projetos div.projeto-card div.iconbar div.iconp.rafaelsoares:before{content:'Rafael Soares  ';font-family:"poppins";font-style:normal;font-weight:normal;width:150px;height:32px;position:absolute;right:-40px;display:flex;justify-content:center;align-items:center;border-top-right-radius:10px;border-bottom-right-radius:10px;color:white;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.rafaelsoares:after{content:"";width:22.5px;height:22.5px;background-color:red;position:absolute;transform:rotate(45deg);right:0;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.rafaelsoares:hover:after{opacity:1;visibility:visible;right:-31px;}
+section.projetos div.projeto-card div.iconbar div.iconp.rafaelsoares:hover:before{opacity:1;visibility:visible;right:-170px;}
+
+section.projetos div.projeto-card div.iconbar div.iconp.ronald:before{content:'Ronald  ';font-family:"poppins";font-style:normal;font-weight:normal;width:150px;height:32px;position:absolute;right:-40px;display:flex;justify-content:center;align-items:center;border-top-right-radius:10px;border-bottom-right-radius:10px;color:white;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.ronald:after{content:"";width:22.5px;height:22.5px;background-color:red;position:absolute;transform:rotate(45deg);right:0;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.ronald:hover:after{opacity:1;visibility:visible;right:-31px;}
+section.projetos div.projeto-card div.iconbar div.iconp.ronald:hover:before{opacity:1;visibility:visible;right:-170px;}
+
+section.projetos div.projeto-card div.iconbar div.iconp.nathan:before{content:'Carlos Sergio  ';font-family:"poppins";font-style:normal;font-weight:normal;width:150px;height:32px;position:absolute;right:-40px;display:flex;justify-content:center;align-items:center;border-top-right-radius:10px;border-bottom-right-radius:10px;color:white;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.nathan:after{content:"";width:22.5px;height:22.5px;background-color:red;position:absolute;transform:rotate(45deg);right:0;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.nathan:hover:after{opacity:1;visibility:visible;right:-31px;}
+section.projetos div.projeto-card div.iconbar div.iconp.nathan:hover:before{opacity:1;visibility:visible;right:-170px;}
+
+
+section.projetos div.projeto-card div.iconbar div.iconp.nathanreverso:before{content:'Nathan  ';font-family:"poppins";font-style:normal;font-weight:normal;width:100px;height:32px;position:absolute;right:0;display:flex;justify-content:center;align-items:center;border-top-left-radius:10px;border-bottom-left-radius:10px;color:white;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.nathanreverso:after{content:"";width:22.5px;height:22.5px;background-color:red;position:absolute;transform:rotate(45deg);left:0;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.nathanreverso:hover:after{opacity:1;visibility:visible;left:-31px;}
+section.projetos div.projeto-card div.iconbar div.iconp.nathanreverso:hover:before{opacity:1;visibility:visible;right:100px;}
+
+section.projetos div.projeto-card div.iconbar div.iconp.rafaellireverso:before{content:'Rafael Li Wu  ';font-family:"poppins";font-style:normal;font-weight:normal;width:150px;height:32px;position:absolute;right:0;display:flex;justify-content:center;align-items:center;border-top-left-radius:10px;border-bottom-left-radius:10px;color:white;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.rafaellireverso:after{content:"";width:22.5px;height:22.5px;background-color:red;position:absolute;transform:rotate(45deg);left:0;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.rafaellireverso:hover:after{opacity:1;visibility:visible;left:-31px;}
+section.projetos div.projeto-card div.iconbar div.iconp.rafaellireverso:hover:before{opacity:1;visibility:visible;right:100px;}
+
+section.projetos div.projeto-card div.iconbar div.iconp.rafaelsoaresreverso:before{content:'Rafael Soares  ';font-family:"poppins";font-style:normal;font-weight:normal;width:150px;height:32px;position:absolute;right:0;display:flex;justify-content:center;align-items:center;border-top-left-radius:10px;border-bottom-left-radius:10px;color:white;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.rafaelsoaresreverso:after{content:"";width:22.5px;height:22.5px;background-color:red;position:absolute;transform:rotate(45deg);left:0;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.rafaelsoaresreverso:hover:after{opacity:1;visibility:visible;left:-31px;}
+section.projetos div.projeto-card div.iconbar div.iconp.rafaelsoaresreverso:hover:before{opacity:1;visibility:visible;right:100px;}
+
+section.projetos div.projeto-card div.iconbar div.iconp.ronaldreverso:before{content:'Ronald Oliveira  ';font-family:"poppins";font-style:normal;font-weight:normal;width:150px;height:32px;position:absolute;right:0;display:flex;justify-content:center;align-items:center;border-top-left-radius:10px;border-bottom-left-radius:10px;color:white;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.ronaldreverso:after{content:"";width:22.5px;height:22.5px;background-color:red;position:absolute;transform:rotate(45deg);left:0;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.ronaldreverso:hover:after{opacity:1;visibility:visible;left:-31px;}
+section.projetos div.projeto-card div.iconbar div.iconp.ronaldreverso:hover:before{opacity:1;visibility:visible;right:100px;}
+
+section.projetos div.projeto-card div.iconbar div.iconp.carlosdanielreverso:before{content:'Carlos Daniel  ';font-family:"poppins";font-style:normal;font-weight:normal;width:150px;height:32px;position:absolute;right:0;display:flex;justify-content:center;align-items:center;border-top-left-radius:10px;border-bottom-left-radius:10px;color:white;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.carlosdanielreverso:after{content:"";width:22.5px;height:22.5px;background-color:red;position:absolute;transform:rotate(45deg);left:0;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.carlosdanielreverso:hover:after{opacity:1;visibility:visible;left:-31px;}
+section.projetos div.projeto-card div.iconbar div.iconp.carlosdanielreverso:hover:before{opacity:1;visibility:visible;right:100px;}
+
+section.projetos div.projeto-card div.iconbar div.iconp.carlossergioreverso:before{content:'Carlos Sergio  ';font-family:"poppins";font-style:normal;font-weight:normal;width:150px;height:32px;position:absolute;right:0;display:flex;justify-content:center;align-items:center;border-top-left-radius:10px;border-bottom-left-radius:10px;color:white;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.carlossergioreverso:after{content:"";width:22.5px;height:22.5px;background-color:red;position:absolute;transform:rotate(45deg);left:0;background-color:#343A40;opacity:0;visibility:hidden;transition:0.75s;}
+section.projetos div.projeto-card div.iconbar div.iconp.carlossergioreverso:hover:after{opacity:1;visibility:visible;left:-31px;}
+section.projetos div.projeto-card div.iconbar div.iconp.carlossergioreverso:hover:before{opacity:1;visibility:visible;right:100px;}

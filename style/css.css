@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('style_bootstrap.css');
+@import url('css_projetos.css');
+*{
+  font-family: "poppins",sans-serif,arial;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+.cr{
+  color: black;
+}
+.iff{
+  color: #007F5F;
+}
+
+/*
++
++     NAVBAR
++
+*/
+
+.navbar-container{
+  position: fixed;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 3px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );  
+  width: 80%;
+  margin: 20px;
+  z-index: 99;
+}
+.container{
+  padding: 10px 0 !important;
+}
+nav :is( span ) {
+  font-size: 27px;
+  font-weight: 800;
+}
+nav :is( ul :is( a ) ) {
+  color: black !important;
+  transition: .4s !important;
+}
+a.dropdown-item:hover{
+  background: #1877f2 !important;   
+  color: white !important;
+}
+.icones {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 5px 7.5px;
+  transition: .3s;
+}
+.icones:hover{
+  background-color: black;
+  color: white;
+}
+.navbar-mobile-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.navbar-mobile-li {
+  width: 19px;
+  height: 4.5px;
+  margin: 2px 0;
+  background-color: black;
+  transition: .4s;  
+}
+.navbar-mobile-li:nth-child(2) {
+  width: 15px;
+}
+.navbar-mobile-li:nth-child(3) {
+  width: 20px;
+}
+
+nav :is( .nav-item-center :is( a ) ) {
+  border-radius: 4px;
+  margin: 0 10px;
+  transition: 1s;
+}
+nav :is( .nav-item-center :is( a:hover ) ) {
+  background-color: #eee;
+}
+
+.navbar-toggler{
+  border: none !important;  
+}
+.navbar-toggler:focus{
+  outline: none !important;
+}
+.button-mobile-active {
+  width: 25px !important;
+}
+
+/*
+*
+*   Página de apresentação ao site
+*
+*/
+
+.section-main{
+  padding: 120px 0 0 0;
+  position: relative;
+  min-height: 90vh;
+}
+.conjunto-main{
+  flex-wrap: wrap;
+}
+.imagem-main{
+  padding: 10px;
+  max-width: 500px;
+}
+.texto-main{  
+  padding: 20px;
+  margin: 0 20px;
+  max-width: 550px;
+  text-align: center;
+}
+
+/*
+*
+*   Nosso pessoal (carousel)
+*
+*/
+
+
+.apresentacao{
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.apresentacao-content{
+  max-width: 500px;
+  text-align: center;
+  padding: 20px;
+}
+.carousel-item{
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+}
+.container-carousel{
+  max-width: 500px;
+  margin: 0 15px;
+}
+.foto{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ } 
+ .guy-name{
+  margin-left:10px;
+  text-align: center;
+ }
+ .foto-img{
+  height: 105px;
+  width: 115px;
+  background-color: white;
+  display:flex;
+  border-radius: 30px;
+  border-bottom-right-radius:100% ;
+  border-top-left-radius: 0px; ;
+  padding: 10px;
+ }
+.foto-img img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.guy-social{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+}
+.guy-social i{
+  font-size: 30px;
+  margin: 0 14px;
+  color: rgba(255,255,255,.65);
+  transition: 1s
+}
+.guy-social i:hover{
+  font-size: 30px;
+  margin: 0 14px;
+  color: white;
+}
+.content{
+  padding: 30px 45px;
+  width: 100%;
+  min-height:332px;
+  background-color: black;
+}
+
+
+
+
+/*   FOOTER     */
+
+footer{
+  width: 100%;
+  color: white;
+  background-color:#222;
+  position: relative;
+}
+.footer-title{
+  padding: 15px;
+  font-size: 40px;
+  font-weight: 800px;
+}
+.footer-title small{
+  font-size: 15px;
+}
+.footer-title :is(.cr){
+  color: white;
+}
+footer form{
+  padding: 40px;
+}
+footer div.footer-titulo{
+  padding: 30px 0;
+  font-size:42px;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  color: #3CA2E6;
+}
+footer .contato{
+  max-width: 1140px;
+  margin: auto;
+}
+input.form-control, select option, select#estado.form-control{
+  background-color: #333;
+  color: white;
+}
+
+/*
+*
+*   Depois do contato
+*
+*/
+
+
+div.ofim{
+  position:relative;
+  bottom: 0;
+  background-color: #323232;
+  right: 0;
+  left: 0;
+}
+div.ofim div.container-fluid{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+div.ofim div.container-fluid div.row{
+  flex-wrap: wrap;
+}
+div.ofim div.container-fluid div.row div{
+margin: 5px 7.5px;
+cursor: pointer;
+}
+.popover{
+  background-color: #444 !important;
+  border: none !important;
+  border-radius: 10px;
+}
+.popover.bs-popover-top .arrow::after{
+  border-top-color: #444 !important;
+}
+.popover-body{
+  background-color: #444;
+  color: white !important;
+}
+
+/*
+*
+*   Card úrsula
+*
+*/
+
+
+
+.ursula{
+  padding: 20px 0 50px 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.ursula .card{
+  max-width: 500px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #8A2387;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin:15px;
+}
+.card-img-top{
+  max-width: 500px;
+}
+.card ul{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  list-style: none;
+  margin:0;
+  flex-wrap: wrap;
+}
+.card li{
+  height: 80px;
+  width: 80px;
+  margin:0 5px;
+}
+.ursula-team img{
+  height: 70px;
+  width:70px;
+  border-radius: 50%; 
+  object-position: center;
+  object-fit: cover;
+}
+.ursula .card-content{
+  max-width: 500px;
+  margin:15px;
+  text-align: center;
+background: #CB356B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+  padding:20px;
+}
+.card-content h3{
+  margin: 0;
+  display: inline-block;
+  padding: 15px 25px;
+}
+.card-content i{
+  color: white;
+}
+.card-content i:hover{
+  background-color: #3A0CA3;
+  border-radius: 10px;
+}
