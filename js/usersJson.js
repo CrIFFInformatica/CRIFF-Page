@@ -65,7 +65,7 @@ let usersJson = [
 	nome: 'Ronald Oliveira',
 	turma: 'Informática 2B',
 	img: 'image4.jpg',
-	texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur semper tortor eu consectetur. Cras vel maximus orci, at fermentum sapien. Vivamus et blandit velit, sed viverra elit. Proin eget laoreet ex. Curabitur vel ligula lorem. Nam tortor ante, fermentum sed ultrices efficitur, lacinia in ante. Curabitur bibendum quam dui, eu graa metus volutpat quis.',
+	texto: 'Meu nome é Ronald Oliveira de Souza, atualmente tenho 17 anos e estou no segundo ano do ensino médio no IFF de Itaperuna, sempre tive curiosidade para saber como funciona por de trás dos computadores, programas e jogos, posso dizer também que sempre gostei de aprender.',
 	instagram: '#',
 	github: '#',
 	facebook: '#'
